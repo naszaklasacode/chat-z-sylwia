@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat z pokojami</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Chat z pokojami</h1>
+    <div class="room-selection">
+      <input type="text" id="room-input" placeholder="Nazwa pokoju">
+      <button id="join-btn">Dołącz do pokoju</button>
+    </div>
+    <div class="chat-container" style="display:none;">
+      <div id="messages"></div>
+      <input type="text" id="message-input" placeholder="Napisz wiadomość...">
+      <button id="send-btn">Wyślij</button>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
